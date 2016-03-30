@@ -7,6 +7,15 @@
   <p>Say something to the world <input type="text" ng-model="greeting" ng-init="greeting='Hello, '" ></p>
   <p>{{ greeting }} world!</p>
   <p>{{ 1+6 }}</p>
+  <input type="text" ng-model="name" placeholder="what is your name?">
+  <h1>My name is: {{name}}</h1>
+  <select ng-model="catsvdogs" name="animalLove">
+    <option value="I love dogs <3">Dogs</option>
+    <option value="I love cats <3">Cats</option>
+    <option value="I love both Dogs and Cats <3">Dogs and Cats</option>
+    <option value="I don't love Dogs or Cats :(">neither</option>
+  </select>
+  <h3>{{catsvdogs}}</h3>
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
